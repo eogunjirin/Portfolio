@@ -41,9 +41,9 @@ function Header() {
           </div>
         </div>
         <div className="links">
-          <a href="#" className="link">Email</a>
-          <a href="#" className="link">LinkedIn</a>
-          <a href="#" className="link">Read.Cv</a>
+          <a href="mailto:emmanuelogunjirin@gmail.com" className="link">Email</a>
+          <a href="https://www.linkedin.com/in/emmanuel-jiren/" className="link">LinkedIn</a>
+          <a href="https://read.cv/eogun" className="link">Read.Cv</a>
         </div>
       </div>
     </div>
