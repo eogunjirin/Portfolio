@@ -22,7 +22,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "git add . && git commit -m 'Auto-build commit' && git push origin main",
+    "build": "git config --global user.email \"emmanuelogunjirin@gmail.com\" && git config --global user.name \"Emmanuel Ogunjirin\" && gatsby build && git add . && git commit -m 'Auto-build commit' && git push origin main",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
