@@ -8,8 +8,9 @@
     align-items: center; /* Vertically center the items */
     margin-bottom: 50px; /* Increase spacing between title and images */
     text-align: left; /* Left align the title */
-    font-size: 2.4rem; 
-    font-weight: 600;
+    font-family: 'Caros', sans-serif;
+    font-size: 2.5rem; 
+    font-weight: 500;
     color: #010A22;/* Increase font size for the featured work text */
 }
 
@@ -31,14 +32,15 @@
 }
 
 .project-big img {
-    border-radius: 20px; /* Rounded corners on the image */
+    border-radius: 28px; /* Rounded corners on the image */
     width: 100%; /* Full width */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure no extra space below the image */
 }
 
 .project-info {
-    padding: 20px 0px; /* Add padding for text */
+    padding-top: 28px;
+    padding-bottom: 20px; /* Add padding for text */
     text-align: left; /* Left align text */
 }
 
@@ -76,14 +78,15 @@
 }
 
 .project-small img {
-    border-radius: 20px; /* Rounded corners on the image */
+    border-radius: 28px; /* Rounded corners on the image */
     width: 100%; /* Full width */
     height: auto; /* Maintain aspect ratio */
     display: block;
 }
 
 .project-small .project-info {
-    padding: 20px 0px; /* Add padding for text */
+    padding-top: 28px;
+    padding-bottom: 20px; /* Add padding for text */
     text-align: left; /* Left align text */
 }
 

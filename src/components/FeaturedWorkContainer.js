@@ -9,7 +9,7 @@ const FeaturedWorkContainer = ({ projects }) => {
         <div className="featured-work-container">
             <h2>
                 Featured work
-                <img src={FlowerIcon} alt="Flower Icon" style={{ height: '30px', marginLeft: '8px' }} />
+                <img src={FlowerIcon} alt="Flower Icon" style={{ height: '35px', marginLeft: '13px' }} />
             </h2>
             <div className="projects-container">
                 {projects.map((project, index) => (
