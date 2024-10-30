@@ -1,0 +1,140 @@
+/* Styles for the big view of featured work */
+.featured-work-container {
+    padding:  60px; /* Add padding around the container */
+}
+
+.featured-work-container h2 {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the items */
+    margin-bottom: 50px; /* Increase spacing between title and images */
+    text-align: left; /* Left align the title */
+    font-size: 2.4rem; 
+    font-weight: 600;
+    color: #010A22;/* Increase font size for the featured work text */
+}
+
+.featured-work-container img {
+    height: 30px; /* Adjust the height of the flower icon */
+}
+
+.featured-work-big {
+    width: 100%; /* Full width for the big project */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack image and text vertically */
+    margin-bottom: 40px; /* Space below the section */
+}
+
+.project-big {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack image and text vertically */
+    overflow: hidden; /* Clip overflow */
+}
+
+.project-big img {
+    border-radius: 20px; /* Rounded corners on the image */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure no extra space below the image */
+}
+
+.project-info {
+    padding: 20px 0px; /* Add padding for text */
+    text-align: left; /* Left align text */
+}
+
+.project-info h3 {
+    font-size: 1.5rem; /* Title size */
+    margin: 0; /* No margin */
+    color: #333; /* Dark color for title */
+    display: inline; /* Display inline for same line */
+}
+
+.project-info span {
+    font-size: 1.2rem; /* Client and year size */
+    color: #010a2273; /* Lighter color for client and year */
+    margin-left: 8px; /* Space between title and client/year */
+    display: inline; /* Display inline for same line */
+}
+
+.project-info p {
+    margin: 10px 0 0 0; /* Space above description */
+    font-size: 1.2rem; /* Description size */
+    color: #010a2273; /* Darker color for description */
+    line-height: 1.5; /* Increase line height for readability */
+}
+
+.featured-work-small {/* Space between projects */
+    margin-bottom: 40px; /* Space below the section */
+}
+
+.project-small {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack image and text vertically */
+    width: calc(50% - 10px); /* Two projects per row */
+    overflow: hidden; /* Clip overflow */
+    margin-bottom: 40px;
+}
+
+.project-small img {
+    border-radius: 20px; /* Rounded corners on the image */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.project-small .project-info {
+    padding: 20px 0px; /* Add padding for text */
+    text-align: left; /* Left align text */
+}
+
+.project-small .project-info h3 {
+    font-size: 1.5rem; /* Title size */
+    margin: 0; /* No margin */
+    color: #333; /* Dark color for title */
+    display: inline; /* Display inline for same line */
+}
+
+.project-small .project-info span {
+    font-size: 1.2rem; /* Client and year size */
+    color: #010a2273; /* Lighter color for client and year */
+    margin-left: 15px; /* Space between title and client/year */
+    display: inline; /* Display inline for same line */
+}
+
+.project-small .project-info p {
+    margin: 10px 0 0 0; /* Space above description */
+    font-size: 1.2rem; /* Description size */
+    color: #010a2278; /* Darker color for description */
+    line-height: 1.5; /* Increase line height for readability */
+}
+
+.project-small .dot {
+        margin-left: 8px; /* Space around the dot */
+        color: #010a2273; /* Color for the dot */
+        font-size: 1.6rem; /* Adjust size if needed */
+    }
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.year-badge {
+    display: inline-block; /* Ensure it behaves like a block */
+    padding: 5px 10px; /* Padding for the badge */
+    border-radius: 20px; /* Rounded corners */
+    border: 1px dashed #D0D0D0; /* Dashed border */
+    color: #010a2273; /* Dark color for text */
+    font-weight: 500; /* Bold text */
+    font-size: 1.2rem; /* Adjust font size */
+    margin-left: 8px; /* Space between title and year */
+}
+
+.project-info .dot {
+    margin-left: 8px;
+    margin-right: 0.7px; /* Space around the dot */
+    color: #010a2273; /* Color for the dot */
+    font-size: 1.6rem; /* Adjust size if needed */
+}
