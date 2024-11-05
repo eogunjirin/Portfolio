@@ -33,17 +33,12 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  console.log('Preview Image:', previewImage);
-  console.log('Site Metadata:', site.siteMetadata);
-
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   
   const absoluteImageUrl = previewImage?.childImageSharp?.original?.src
     ? `${site.siteMetadata.siteUrl}${previewImage.childImageSharp.original.src}`
     : `${site.siteMetadata.siteUrl}/preview.png`
-
-  console.log('Final Image URL:', absoluteImageUrl);
 
   return (
     <Helmet
