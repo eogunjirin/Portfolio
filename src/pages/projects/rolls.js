@@ -5,7 +5,7 @@ import FadeInImage from '../../components/FadeInImage';
 import '../../components/styles/ProjectDetail.css';
 
 // Import images
-import HeroImage from '../../images/RollsHero.png';
+import HeroImage from '../../images/rollshero.png';
 import Image1 from '../../images/rolls1.png';
 import Image2 from '../../images/rolls2.png';
 import Image3 from '../../images/rolls3.png';
