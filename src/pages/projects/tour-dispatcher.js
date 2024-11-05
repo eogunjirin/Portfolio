@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import BackIcon from '../../images/back-icon.svg';
 import FadeInImage from '../../components/FadeInImage';
 import '../../components/styles/ProjectDetail.css';
+import SEO from '../../components/seo';
 
 // Import images
 import HeroImage from '../../images/tour-dispatcher1.png';
@@ -17,6 +18,11 @@ import MapImage2 from '../../images/tour-dispatcher9.png';
 
 const TourDispatcherProject = () => {
     return (
+        <>
+            <SEO
+                title="Tour Dispatcher - Gorillas"
+                description="A case study on the Tour Dispatcher tool for Gorillas, optimizing delivery efficiency through automated dispatch"
+            />
         <div className="project-detail-container">
             {/* Back Navigation */}
             <Link to="/" className="back-button">
@@ -104,7 +110,8 @@ The tool visualises the flow of orders from warehouse to delivery.
                     <FadeInImage src={MapImage2} alt="Map View 2" />
                 </div>
             </section>
-        </div>
+            </div>
+        </>
     );
 };
 

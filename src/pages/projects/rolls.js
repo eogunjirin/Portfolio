@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import BackIcon from '../../images/back-icon.svg';
 import FadeInImage from '../../components/FadeInImage';
 import '../../components/styles/ProjectDetail.css';
+import SEO from '../../components/seo';
 
 // Import images
 import HeroImage from '../../images/rollshero.png';
@@ -21,6 +22,11 @@ import Image12 from '../../images/rolls12.png';
 
 const RollsProject = () => {
     return (
+        <>
+            <SEO
+                title="Rolls - Social album with your close friends"
+                description="A case study on Rolls, a social album with your close friends"
+            />
         <div className="project-detail-container">
             {/* Back Navigation */}
             <Link to="/" className="back-button">
@@ -115,6 +121,7 @@ const RollsProject = () => {
                 </div>
             </section>
         </div>
+        </>
     );
 };
 

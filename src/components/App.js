@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import Header from './header';
 import FeaturedWorkContainer from './FeaturedWorkContainer';
+import SEO from './seo';
 
 // Import images
 import ReportsImage from '../images/Reports.png';
@@ -87,10 +88,16 @@ function App() {
   ];
 
   return (
+    <>
+      <SEO
+        title="Emmanuel Ogunjirin"
+        description="Designing beautiful things for computers"
+      />
     <div className="App">
       <Header />
       <FeaturedWorkContainer projects={projects} isBigView={isBigView} />
-    </div>
+      </div>
+    </>
   );
 }
 

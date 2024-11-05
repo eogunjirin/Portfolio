@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import BackIcon from '../../images/back-icon.svg';
 import FadeInImage from '../../components/FadeInImage';
 import '../../components/styles/ProjectDetail.css';
+import SEO from '../../components/seo';
 
 // Import images
 import HeroImage from '../../images/pooper-hero.png';
@@ -22,6 +23,11 @@ import Video2 from '../../images/pooper2.mp4';
 
 const PooperProject = () => {
     return (
+        <>
+            <SEO
+                title="Pooper - Host listening parties with your friends"
+                description="A case study on Pooper, a tool for hosting listening parties with friends"
+            />
         <div className="project-detail-container">
             {/* Back Navigation */}
             <Link to="/" className="back-button">
@@ -143,6 +149,7 @@ const PooperProject = () => {
                 </div>
             </section>
         </div>
+        </>
     );
 };
 

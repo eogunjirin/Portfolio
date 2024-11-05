@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import BackIcon from '../../images/back-icon.svg';
 import FadeInImage from '../../components/FadeInImage';
 import '../../components/styles/ProjectDetail.css';
+import SEO from '../../components/seo';
 
 // Import images
 import HeroImage from '../../images/sm-hero.png';
@@ -17,6 +18,11 @@ import Video3 from '../../images/sm3.mp4';
 
 const SmashedeProject = () => {
     return (
+        <>
+            <SEO
+                title="sMasheDe - Compressed News Consumption"
+                description="A case study on sMasheDe, delivering news in a compressed and easy-to-digest format"
+            />
         <div className="project-detail-container">
             {/* Back Navigation */}
             <Link to="/" className="back-button">
@@ -130,7 +136,8 @@ const SmashedeProject = () => {
                 </div>
             </section>
 
-        </div>
+            </div>
+        </>
     );
 };
 
