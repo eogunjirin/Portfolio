@@ -4,12 +4,9 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
  */
 
-/**
- * @type {import('gatsby').GatsbySSR['onRenderBody']}
- */
 import React from 'react'
 
-exports.onRenderBody = ({ setHeadComponents }) => {
+export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <meta
       key="viewport"
