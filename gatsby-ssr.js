@@ -7,14 +7,6 @@
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
-import React from 'react'
-
-exports.onRenderBody = ({ setHeadComponents }) => {
-  setHeadComponents([
-    <meta
-      key="viewport"
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />,
-  ])
+exports.onRenderBody = ({ setHtmlAttributes }) => {
+  setHtmlAttributes({ lang: `en` })
 }
