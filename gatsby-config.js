@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Emmanuel Ogunjirin`,
+    title: ` `,
     description: `Emmanuel Ogunjirin - Designing beautiful things for computers`,
     author: ``,
     siteUrl: `https://emmanuel.fyi`,

@@ -90,7 +90,7 @@ function App() {
   return (
     <>
       <SEO
-        title="Portfolio"
+        title="Emmanuel Ogunjirin"
         description="Emmanuel Ogunjirin - Designing beautiful things for computers"
       />
     <div className="App">
