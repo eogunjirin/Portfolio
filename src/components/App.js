@@ -90,8 +90,8 @@ function App() {
   return (
     <>
       <SEO
-        title="Emmanuel Ogunjirin"
-        description="Designing beautiful things for computers"
+        title="Portfolio"
+        description="Emmanuel Ogunjirin - Designing beautiful things for computers"
       />
     <div className="App">
       <Header />
