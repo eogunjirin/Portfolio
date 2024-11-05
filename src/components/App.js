@@ -14,7 +14,7 @@ import sMasheDeImage from '../images/sMasheDe.png';
 import JuulsImage from '../images/Juuls.png';
 
 function App() {
-  const [isBigView, setIsBigView] = useState(true);
+  const [isBigView] = useState(true);
 
   const projects = [
     {
@@ -23,7 +23,8 @@ function App() {
       year: "2024",
       description: "Redesigning the reports page into a unified, single-page view for improved visualization and a more seamless user experience.",
       image: ReportsImage,
-      viewType: "small"
+      viewType: "small",
+      route: "https://www.hipeople.io/assessments"
     },
     {
       title: "HiPeople Website Redesign",
@@ -31,21 +32,24 @@ function App() {
       year: "2023 - 2024",
       description: "Revamping the HiPeople website's design to boost conversions and deliver an engaging experience for visitors.",
       image: HiWebsiteImage,
-      viewType: "small"
+      viewType: "small",
+      route: "https://www.hipeople.io/"
     },
     {
       title: "Rolls",
       year: "2023",
       description: "Share memories with your close friends and friend circles.",
       image: RollsImage,
-      viewType: "big"
+      viewType: "big",
+      route: "/projects/rolls"
     },
     {
       title: "Pooper",
       year: "2022",
       description: "Host listening parties with your friends.",
       image: PooperImage,
-      viewType: "big"
+      viewType: "big",
+      route: "/projects/pooper"
     },
     {
       title: "Payment reminders",
@@ -53,7 +57,8 @@ function App() {
       year: "2022",
       description: "Enabling merchants to automatically send payment reminder emails directly to customers.",
       image: ShopifyImage,
-      viewType: "small"
+      viewType: "small",
+      route: "https://www.shopify.com/editions/winter2023#payment-reminders"
     },
     {
       title: "Tour dispatcher",
@@ -61,14 +66,16 @@ function App() {
       year: "2022",
       description: "Utilizing advanced algorithms to enhance delivery efficiency with an automated dispatch tool for managing stacked orders.",
       image: GorillasImage,
-      viewType: "small"
+      viewType: "small",
+      route: "/projects/tour-dispatcher"
     },
     {
       title: "sMasheDe",
       year: "2020",
       description: "News consumption in a compressed and easy-to-digest format.",
       image: sMasheDeImage,
-      viewType: "big"
+      viewType: "big",
+      route: "/projects/smashede"
     },
     {
       title: "Juuls",

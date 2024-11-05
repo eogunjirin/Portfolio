@@ -2,8 +2,10 @@ import React from 'react';
 import FlowerIcon from '../images/FB.svg'; // Adjust the path as necessary
 import FeaturedWorkBigView from './FeaturedWorkBigView';
 import FeaturedWorkSmallView from './FeaturedWorkSmallView';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const FeaturedWorkContainer = ({ projects }) => {
+
 
     return (
         <div className="featured-work-container">

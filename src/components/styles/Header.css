@@ -189,4 +189,113 @@
     }
   }
   
+  /* Add these media queries at the end of the file */
+  @media (max-width: 1024px) {
+    .header-container {
+      padding: 40px 30px;
+      height: auto;
+      min-height: 520px;
+    }
+
+    .header {
+      font-size: 3.5rem;
+    }
+
+    .name {
+      font-size: 3.5rem;
+    }
+
+    .subheader {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header-container {
+      padding: 30px 20px;
+      align-items: flex-start;
+    }
+
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      font-size: 2.2rem;
+      padding-right: 40px;
+    }
+
+    .header-left {
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .name {
+      font-size: 2.2rem;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    .header img {
+      width: 30px;
+      height: auto;
+      margin-left: 10px;
+    }
+
+    .subheader {
+      font-size: 1.3rem;
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .links {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .link {
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header-container {
+      min-height: 420px;
+    }
+
+    .header {
+      font-size: 2rem;
+      padding-right: 30px;
+    }
+
+    .name {
+      font-size: 2rem;
+    }
+
+    .subheader {
+      font-size: 1.3rem;
+      line-height: 1.7;
+    }
+
+    .link {
+      font-size: 1rem;
+      padding: 6px 14px;
+      white-space: nowrap;
+    }
+
+    .header img {
+      width: 25px;
+      margin-left: 8px;
+    }
+
+    .links {
+      gap: 15px;
+    }
+  }
+  
  

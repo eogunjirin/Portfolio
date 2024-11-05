@@ -1,0 +1,439 @@
+/* Container styles */
+.project-detail-container {
+    margin: 0 auto;
+    padding: 50px 60px;
+    background-color: #FDFBF7;
+}
+
+/* Navigation styles */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 60px;
+    font-family: 'SpaceGrotesk', sans-serif;
+    background-color: #010A22;
+    padding: 16px 24px;
+    border-radius: 100px;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+}
+
+.back-button img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+/* Title styles */
+.project-title {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    font-family: 'Caros', sans-serif;
+    font-weight: 500;
+    color: #010A22;
+}
+
+/* Hero image styles */
+.hero-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+/* Project info grid layout */
+.project-info-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 200px;
+    margin-bottom: 60px;
+    max-width: 100%;
+    align-items: start;
+}
+
+.project-description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #010a22b8;
+    max-width: 900px;
+}
+
+/* Metadata section styles */
+.project-metadata {
+    padding-left: 30px;
+    justify-self: end;
+    width: 100%;
+}
+
+.metadata-item {
+    margin-bottom: 30px;
+}
+
+.metadata-item h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #010a227b;
+    margin-bottom: 10px;
+}
+
+.metadata-item p {
+    font-size: 1.3rem;
+    margin: 4px 0;
+    color: #010a22b8;
+}
+
+/* Section styles */
+.project-section {
+    margin-bottom: 80px;
+    position: relative;
+    /* Center the section content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers children horizontally */
+}
+
+/* Heading styles for project sections */
+.project-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1px;
+    font-family: 'SpaceGrotesk', sans-serif;
+    color: #010A22;
+    max-width: 800px;
+    /* Control the maximum width of headings */
+    width: 100%;
+    /* Take full width up to max-width */
+    text-align: left;
+    /* Keep text aligned left within its container */
+}
+
+/* Paragraph text styles with controlled width */
+.project-section p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #010a22b8;
+    max-width: 800px;
+    /* Limit paragraph width for optimal readability */
+    width: 100%;
+    /* Take full width up to max-width */
+    text-align: left;
+    /* Keep text aligned left within its container */
+}
+
+/* Image grid styles */
+.image-grid {
+    width: 100%;
+    /* Take full container width */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project-info-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .project-metadata {
+        border-left: none;
+        padding-left: 0;
+        padding-top: 30px;
+        justify-self: start;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .project-section h2,
+    .project-section p {
+        max-width: 100%;
+        /* Full width on mobile */
+    }
+
+    .project-detail-container {
+        padding: 40px 24px;
+    }
+}
+
+/* Divider line styles */
+.section-divider {
+    width: 100%;
+    height: 1.2px;
+    background-color: hsl(224, 94%, 7%, 15%);
+    margin: 80px 0;
+    /* Adjust spacing above and below the line */
+}
+
+/* Full width image grid styles */
+.image-grid-full {
+    width: 100%;
+    /* Take full container width */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.image-grid-full img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid-full img:hover {
+    transform: scale(1.02);
+}
+
+/* Video grid styles - Creates a two-column layout for videos */
+.video-grid {
+    width: 100%;
+    /* Take up full width of parent container */
+    display: grid;
+    /* Use CSS Grid for layout */
+    grid-template-columns: 1fr 1fr;
+    /* Create two equal columns */
+    gap: 24px;
+    /* Add spacing between grid items */
+    margin-top: 40px;
+    /* Space above the video grid */
+}
+
+/* Container for each video - Controls the card appearance */
+.video-container {
+    position: relative;
+    /* Enable positioning context for video */
+    width: 100%;
+    /* Take full width of grid cell */
+    background-color: #06E5AC;
+    /* Mint green background color */
+    border-radius: 27px;
+    /* Rounded corners matching image style */
+    overflow: hidden;
+    /* Hide anything outside container */
+    height: 100%;
+    /* Take full height of grid cell */
+}
+
+/* Video element styling - Controls how video fills the container */
+.video-container video {
+    width: 110%;
+    /* Make video slightly larger than container to zoom */
+    height: 110%;
+    /* Keep aspect ratio while zooming */
+    object-fit: cover;
+    /* Scale video to cover container, cropping if needed */
+    display: block;
+    /* Remove default inline spacing */
+    position: relative;
+    /* Enable positioning */
+    left: 50%;
+    /* Center horizontally */
+    top: 50%;
+    /* Center vertically */
+    transform: translate(-50%, -50%);
+    /* Perfect centering technique */
+}
+
+/* Responsive design - Adjusts layout for mobile devices */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+        /* Stack videos vertically on mobile */
+    }
+}
+
+/* Full width video container styles */
+.video-container-full {
+    width: 100%;
+    height: 700px;
+    /* Take full container width */
+    background-color: #06E5AC;
+    /* Mint green background */
+    border-radius: 27px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Hide overflow */
+    margin-top: 40px;
+    /* Add padding around the video */
+    display: flex;
+    /* Enable flexbox for centering */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.video-container-full-inner {
+    width: 329px;
+    height: 628px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.video-container-full-inner video {
+    /* Let video maintain natural width */
+    height: 630px;
+    /* Set a fixed height */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Pooper video container styles */
+
+.pooper-video-container {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    /* Increased height to accommodate phone */
+    background-color: #d1fabd;
+    /* Light green background */
+    border-radius: 27px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pooper-video-container-inner {
+    width: 285px;
+    height: 610px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 42px;
+    border: 13px solid #000;
+    background-color: #000;
+}
+
+.pooper-video-container-inner video {
+    height: 680px;
+    /* Reduced to show phone frame */
+    width: auto;
+    object-fit: contain;
+    display: block;
+    /* Black background for phone screen */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pooper-video-container {
+        height: 500px;
+    }
+
+    .pooper-video-container video {
+        height: 75%;
+    }
+}
+
+/* Add these new styles */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Update the existing media queries and add new ones */
+@media (max-width: 1024px) {
+  .project-info-grid {
+    gap: 100px;
+  }
+
+  .project-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-detail-container {
+    padding: 30px 20px;
+  }
+
+  .project-info-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .project-metadata {
+    padding-left: 0;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .project-description,
+  .project-section p {
+    font-size: 1.2rem;
+  }
+
+  .video-container-full {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .video-container-full-inner {
+    width: 100%;
+    max-width: 329px;
+    height: auto;
+  }
+
+  .pooper-video-container {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .pooper-video-container-inner {
+    width: 100%;
+    max-width: 285px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-button {
+    font-size: 1rem;
+    padding: 12px 20px;
+    margin-bottom: 40px;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .section-divider {
+    margin: 40px 0;
+  }
+}
