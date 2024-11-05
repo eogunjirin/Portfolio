@@ -22,15 +22,28 @@ function SEO({ description, lang, meta, title }) {
           }
         }
         previewImage: file(relativePath: { eq: "preview.png" }) {
-          publicURL
+          childImageSharp {
+            gatsbyImageData(width: 1200, layout: FIXED)
+            original {
+              src
+            }
+          }
         }
       }
     `
   )
 
+  console.log('Preview Image:', previewImage);
+  console.log('Site Metadata:', site.siteMetadata);
+
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const absoluteImageUrl = `${site.siteMetadata.siteUrl}${previewImage.publicURL}`
+  
+  const absoluteImageUrl = previewImage?.childImageSharp?.original?.src
+    ? `${site.siteMetadata.siteUrl}${previewImage.childImageSharp.original.src}`
+    : `${site.siteMetadata.siteUrl}/preview.png`
+
+  console.log('Final Image URL:', absoluteImageUrl);
 
   return (
     <Helmet
