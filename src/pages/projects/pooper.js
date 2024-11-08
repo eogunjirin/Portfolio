@@ -9,6 +9,9 @@ import SEO from '../../components/seo';
 import HeroImage from '../../images/pooper-hero.png';
 import Image1 from '../../images/pooper1.png';
 import Image2 from '../../images/pooper2.png';
+import Image2_1 from '../../images/pooper21.png';
+import Image2_2 from '../../images/pooper22.png';
+import Image2_3 from '../../images/pooper23.png';
 import Image3 from '../../images/pooper3.png';
 import Image4 from '../../images/pooper4.png';
 import Image5 from '../../images/pooper5.png';
@@ -18,6 +21,9 @@ import Image8 from '../../images/pooper8.png';
 import Image9 from '../../images/pooper9.png';
 import Image10 from '../../images/pooper10.png';
 import Image11 from '../../images/pooper11.png';
+import Image11_1 from '../../images/pooper11-1.png';
+import Image11_2 from '../../images/pooper11-2.png';
+import Image11_3 from '../../images/pooper11-3.png';
 import Video1 from '../../images/pooper1.mp4';
 import Video2 from '../../images/pooper2.mp4';
 
@@ -108,8 +114,11 @@ const PooperProject = () => {
                 <p>
                     This is the core of the app experience, I wanted to convey how the app works which led to having this mini rings rotating around the big circle to communicate how the app works at it’s core.
                 </p>
-                <div className="image-grid-full">
+                <div className="image-grid">
                     <FadeInImage src={Image2} alt="The App" />
+                    <FadeInImage src={Image2_1} alt="The App" />
+                    <FadeInImage src={Image2_2} alt="The App" />
+                    <FadeInImage src={Image2_3} alt="The App" />
                 </div>
             </section>
 
@@ -144,8 +153,11 @@ const PooperProject = () => {
                 <p>
                     The idea behind Sub groups was to create a way to categorise devices with similar capabilities and assign a specific type of equaliser to them. For example, iPhones are great with bass, while some Android devices might do well in treble (no shade to any device)
                 </p>
-                <div className="image-grid-full">
+                <div className="image-grid">
                     <FadeInImage src={Image11} alt="Sub groups" />
+                    <FadeInImage src={Image11_1} alt="Sub groups" />
+                    <FadeInImage src={Image11_2} alt="Sub groups" />
+                    <FadeInImage src={Image11_3} alt="Sub groups" />
                 </div>
             </section>
         </div>

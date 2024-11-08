@@ -18,7 +18,12 @@ function Header() {
               <span className="dot small-dot"></span>
             </span>
             <span className="normal-text"> Designing AI recruiting tools at </span>
-            <span className="highlight">
+            <a
+              href="https://hipeople.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="highlight company-link"
+            >
               HiPeople
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +37,7 @@ function Header() {
               >
                 <path fillRule="evenodd" d="M11.3 8.3a.5.5 0 0 1 0 .7l-4 4a.5.5 0 0 1-.7-.7L9.5 8H1.5a.5.5 0 0 1 0-1h8L6.6 4.7a.5.5 0 1 1 .7-.7l4 4z" />
               </svg>
-            </span>
+            </a>
             <br />
             <span className="normal-text">Past - </span>
             <span className="past-companies">Shopify,</span>

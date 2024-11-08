@@ -16,6 +16,11 @@
 
 .featured-work-container img {
     height: 30px; /* Adjust the height of the flower icon */
+    transition: transform 0.4s ease;
+}
+
+.featured-work-container h2 img:hover {
+    transform: rotate(10deg);
 }
 
 .featured-work-big {
@@ -180,25 +185,243 @@
 }
 
 @media (max-width: 768px) {
+  .featured-work-container {
+    padding: 30px 24px 60px; /* Increased bottom padding to 60px */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .featured-work-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .featured-work-container h2 img {
+    width: 27px;
+    height: 27px;
+  }
+
   .projects-container {
     gap: 15px;
   }
 
+  /* Project layout - both big and small */
+  .project-big,
   .project-small {
-    width: 100%; /* Full width on mobile */
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 80px;
   }
 
+  .project-big:last-child,
+  .project-small:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Project info styles - unified for both big and small */
+  .project-info,
+  .project-small .project-info {
+    padding: 20px 0 0 0;
+  }
+
+  /* Title styles - unified */
   .project-info h3,
+  .project-big .project-info h3,
+  .project-small .project-info h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #333;
+  }
+
+  /* Client name styles - unified */
+  .project-info span,
+  .project-big .project-info span,
+  .project-small .project-info span {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    margin-right: 8px;
+    color: #010a2273;
+  }
+
+  /* Year badge - unified */
+  .year-badge {
+    font-size: 1rem;
+    padding: 4px 8px;
+    margin-left: 16px;
+    display: inline-block;
+    color: #010a2273;
+  }
+
+  /* Description - unified */
+  .project-info p,
+  .project-big .project-info p,
+  .project-small .project-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #010a2273;
+  }
+
+  /* Hide dot everywhere */
+  .dot,
+  .project-info .dot,
+  .project-small .project-info .dot {
+    display: none;
+  }
+
+  /* Project images - reduced border radius */
+  .project-big img,
+  .project-small img {
+    border-radius: 16px; /* Reduced from 28px */
+  }
+
+  /* Project info styles */
+  .project-info,
+  .project-small .project-info {
+    padding: 20px 0 0 0;
+  }
+
+  /* Title styles - different for big and small */
+  .project-small .project-info h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  /* Keep big project title inline */
+  .project-big .project-info h3 {
+    display: inline;
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+
+  /* Client name styles */
+  .project-info span,
+  .project-big .project-info span,
+  .project-small .project-info span {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    margin-right: 8px;
+    color: #010a2273;
+  }
+
+  /* Year badge */
+  .year-badge {
+    font-size: 1rem;
+    padding: 4px 8px;
+    margin-left: 16px;
+    display: inline-block;
+    color: #010a2273;
+  }
+
+  /* Description - unified */
+  .project-info p,
+  .project-big .project-info p,
+  .project-small .project-info p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #010a2273;
+  }
+
+  /* Hide dot everywhere */
+  .dot,
+  .project-info .dot,
+  .project-small .project-info .dot {
+    display: none;
+  }
+
+  /* Remove or zero out any existing margins */
+  .featured-work-big,
+  .featured-work-small {
+    margin-bottom: 0;
+  }
+
+  /* Project layout - unified spacing */
+  .project-big,
+  .project-small {
+    width: 100%;
+    margin-bottom: 80px; /* Consistent spacing for all projects */
+  }
+
+  /* Remove any additional margins from containers */
+  .projects-container {
+    gap: 0; /* Remove gap since we're using margin for spacing */
+  }
+
+  /* Ensure last project doesn't have bottom margin */
+  .project-big:last-child,
+  .project-small:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Container spacing */
+  .featured-work-container {
+    padding: 30px 24px;
+  }
+
+  /* Reset all existing margins first */
+  .featured-work-big,
+  .featured-work-small,
+  .project-big,
+  .project-small {
+    margin: 0;
+  }
+
+  /* Apply consistent spacing for big projects */
+  .featured-work-big {
+    margin-bottom: 60px;
+  }
+
+  /* Apply consistent spacing for small projects */
+  .project-small {
+    margin-bottom: 60px;
+  }
+
+  /* Remove gap from projects container */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Ensure last items don't have margin */
+  .featured-work-big:last-child,
+  .project-small:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-work-container {
+    padding: 24px 16px 80px; /* Adjusted for smaller screens */
+  }
+
+  .featured-work-container h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Maintain consistent text styles */
+  .project-info h3,
+  .project-big .project-info h3,
   .project-small .project-info h3 {
     font-size: 1.3rem;
   }
 
   .project-info span,
+  .project-big .project-info span,
   .project-small .project-info span,
   .project-info p,
+  .project-big .project-info p,
   .project-small .project-info p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .year-badge {
@@ -206,42 +429,8 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .featured-work-container {
-    padding: 30px 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .featured-work-big {
-    width: calc(100% - 40px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .project-big {
-    height: auto;
-    aspect-ratio: 4/3; /* Changed from 1/1 to 4/3 for better image display */
-    overflow: hidden;
-  }
-
-  .project-big img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: 4/3;
-  }
-
-  .project-small {
-    width: calc(100% - 40px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .project-small img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: 4/3;
+    padding: 20px 12px 40px; /* Adjusted for smallest screens */
   }
 }
