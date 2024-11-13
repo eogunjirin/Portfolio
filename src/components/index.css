@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'SpaceGrotesk', sans-serif;
+  font-weight: 400;
   background-color: #f0f0f0;
   /* Set your desired background color */
 }

@@ -1,166 +1,232 @@
 /* Styles for the big view of featured work */
 .featured-work-container {
-    padding:  60px; /* Add padding around the container */
+  padding: 60px;
+  /* Add padding around the container */
 }
 
 .featured-work-container h2 {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center the items */
-    margin-bottom: 50px; /* Increase spacing between title and images */
-    text-align: left; /* Left align the title */
-    font-family: 'Caros', sans-serif;
-    font-size: 2.5rem; 
-    font-weight: 500;
-    color: #010A22;/* Increase font size for the featured work text */
+  display: flex;
+  /* Use flexbox for alignment */
+  align-items: center;
+  /* Vertically center the items */
+  margin-bottom: 50px;
+  /* Increase spacing between title and images */
+  text-align: left;
+  /* Left align the title */
+  font-family: 'Caros', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #010A22;
+  /* Increase font size for the featured work text */
 }
 
 .featured-work-container img {
-    height: 30px; /* Adjust the height of the flower icon */
-    transition: transform 0.4s ease;
+  height: 30px;
+  /* Adjust the height of the flower icon */
+  transition: transform 0.4s ease;
 }
 
 .featured-work-container h2 img:hover {
-    transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 .featured-work-big {
-    width: 100%; /* Full width for the big project */
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack image and text vertically */
-    margin-bottom: 40px; /* Space below the section */
+  width: 100%;
+  /* Full width for the big project */
+  display: flex;
+  /* Use flexbox for alignment */
+  flex-direction: column;
+  /* Stack image and text vertically */
+  margin-bottom: 40px;
+  /* Space below the section */
 }
 
 .project-big {
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
 }
 
 .project-big:hover {
-    transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .project-big img {
-    border-radius: 28px; /* Rounded corners on the image */
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure no extra space below the image */
+  border-radius: 28px;
+  /* Rounded corners on the image */
+  width: 100%;
+  /* Full width */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Ensure no extra space below the image */
 }
 
 .project-info {
-    padding-top: 28px;
-    padding-bottom: 20px; /* Add padding for text */
-    text-align: left; /* Left align text */
+  padding-top: 28px;
+  padding-bottom: 20px;
+  /* Add padding for text */
+  text-align: left;
+  /* Left align text */
 }
 
 .project-info h3 {
-    font-size: 1.5rem; /* Title size */
-    margin: 0; /* No margin */
-    color: #333; /* Dark color for title */
-    display: inline; /* Display inline for same line */
+  font-size: 1.5rem;
+  /* Title size */
+  margin: 0;
+  /* No margin */
+  color: #333;
+  /* Dark color for title */
+  display: inline;
+  /* Display inline for same line */
 }
 
 .project-info span {
-    font-size: 1.2rem; /* Client and year size */
-    color: #010a2273; /* Lighter color for client and year */
-    margin-left: 8px; /* Space between title and client/year */
-    display: inline; /* Display inline for same line */
+  font-size: 1.2rem;
+  /* Client and year size */
+  color: #010a2273;
+  /* Lighter color for client and year */
+  margin-left: 8px;
+  /* Space between title and client/year */
+  display: inline;
+  /* Display inline for same line */
 }
 
 .project-info p {
-    margin: 10px 0 0 0; /* Space above description */
-    font-size: 1.2rem; /* Description size */
-    color: #010a2273; /* Darker color for description */
-    line-height: 1.5; /* Increase line height for readability */
+  margin: 10px 0 0 0;
+  /* Space above description */
+  font-size: 1.2rem;
+  /* Description size */
+  color: #010a2273;
+  /* Darker color for description */
+  line-height: 1.5;
+  /* Increase line height for readability */
 }
 
-.featured-work-small {/* Space between projects */
-    margin-bottom: 40px; /* Space below the section */
+.featured-work-small {
+  /* Space between projects */
+  margin-bottom: 40px;
+  /* Space below the section */
 }
 
 .project-small {
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack image and text vertically */
-    width: calc(50% - 10px); /* Two projects per row */
-    overflow: hidden; /* Clip overflow */
-    margin-bottom: 40px;
+  display: flex;
+  /* Use flexbox for alignment */
+  flex-direction: column;
+  /* Stack image and text vertically */
+  width: calc(50% - 10px);
+  /* Two projects per row */
+  overflow: hidden;
+  /* Clip overflow */
+  margin-bottom: 40px;
 }
 
 .project-small img {
-    border-radius: 28px; /* Rounded corners on the image */
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
+  border-radius: 28px;
+  /* Rounded corners on the image */
+  width: 100%;
+  /* Full width */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
 }
 
 .project-small .project-info {
-    padding-top: 28px;
-    padding-bottom: 20px; /* Add padding for text */
-    text-align: left; /* Left align text */
+  padding-top: 28px;
+  padding-bottom: 20px;
+  /* Add padding for text */
+  text-align: left;
+  /* Left align text */
 }
 
 .project-small .project-info h3 {
-    font-size: 1.5rem; /* Title size */
-    margin: 0; /* No margin */
-    color: #333; /* Dark color for title */
-    display: inline; /* Display inline for same line */
+  font-size: 1.5rem;
+  /* Title size */
+  margin: 0;
+  /* No margin */
+  color: #333;
+  /* Dark color for title */
+  display: inline;
+  /* Display inline for same line */
 }
 
 .project-small .project-info span {
-    font-size: 1.2rem; /* Client and year size */
-    color: #010a2273; /* Lighter color for client and year */
-    margin-left: 15px; /* Space between title and client/year */
-    display: inline; /* Display inline for same line */
+  font-size: 1.2rem;
+  /* Client and year size */
+  color: #010a2273;
+  /* Lighter color for client and year */
+  margin-left: 15px;
+  /* Space between title and client/year */
+  display: inline;
+  /* Display inline for same line */
 }
 
 .project-small .project-info p {
-    margin: 10px 0 0 0; /* Space above description */
-    font-size: 1.2rem; /* Description size */
-    color: #010a2278; /* Darker color for description */
-    line-height: 1.5; /* Increase line height for readability */
+  margin: 10px 0 0 0;
+  /* Space above description */
+  font-size: 1.2rem;
+  /* Description size */
+  color: #010a2278;
+  /* Darker color for description */
+  line-height: 1.5;
+  /* Increase line height for readability */
 }
 
 .project-small .dot {
-        margin-left: 8px; /* Space around the dot */
-        color: #010a2273; /* Color for the dot */
-        font-size: 1.6rem; /* Adjust size if needed */
-    }
+  margin-left: 8px;
+  /* Space around the dot */
+  color: #010a2273;
+  /* Color for the dot */
+  font-size: 1.6rem;
+  /* Adjust size if needed */
+}
 
 
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .year-badge {
-    display: inline-block; /* Ensure it behaves like a block */
-    padding: 5px 10px; /* Padding for the badge */
-    border-radius: 20px; /* Rounded corners */
-    border: 1px dashed #D0D0D0; /* Dashed border */
-    color: #010a2273; /* Dark color for text */
-    font-weight: 500; /* Bold text */
-    font-size: 1.2rem; /* Adjust font size */
-    margin-left: 8px; /* Space between title and year */
+  display: inline-block;
+  /* Ensure it behaves like a block */
+  padding: 5px 10px;
+  /* Padding for the badge */
+  border-radius: 20px;
+  /* Rounded corners */
+  border: 1px dashed #D0D0D0;
+  /* Dashed border */
+  color: #010a2273;
+  /* Dark color for text */
+  font-weight: 500;
+  /* Bold text */
+  font-size: 1.2rem;
+  /* Adjust font size */
+  margin-left: 8px;
+  /* Space between title and year */
 }
 
 .project-info .dot {
-    margin-left: 8px;
-    margin-right: 0.7px; /* Space around the dot */
-    color: #010a2273; /* Color for the dot */
-    font-size: 1.6rem; /* Adjust size if needed */
+  margin-left: 8px;
+  margin-right: 0.7px;
+  /* Space around the dot */
+  color: #010a2273;
+  /* Color for the dot */
+  font-size: 1.6rem;
+  /* Adjust size if needed */
 }
 
 /* Project card link styles */
 .project-small {
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
 }
 
 /* Hover effect for project cards */
 .project-small:hover {
-    transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 /* Add just these new styles */
@@ -180,13 +246,81 @@
   }
 
   .featured-work-container h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 30px;
   }
+
+  .featured-work-container h2 img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .year-badge {
+    padding: 4px 8px;
+    margin-left: 16px;
+    display: inline-block;
+    color: #010a2273;
+  }
+
+  .project-big img,
+  .project-small img {
+    border-radius: 23px;
+    /* Reduced from 28px */
+  }
+
+  .project-info,
+  .project-small .project-info {
+    padding: 20px 0 0 0;
+  }
+
+  .project-info h3,
+  .project-big .project-info h3,
+  .project-small .project-info h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: #333;
+  }
+
+  .project-info span,
+  .project-big .project-info span,
+  .project-small .project-info span {
+    line-height: 1.5;
+    margin: 0;
+    margin-right: 8px;
+    color: #010a2273;
+  }
+
+  .project-info p,
+  .project-big .project-info p,
+  .project-small .project-info p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #010a2273;
+  }
+
+  /* Hide dot everywhere */
+  .dot,
+  .project-info .dot,
+  .project-small .project-info .dot {
+    display: none;
+  }
+
+.project-big .project-info h3 {
+  display: inline;
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 8px;
+}
 }
 
 @media (max-width: 768px) {
   .featured-work-container {
-    padding: 30px 24px 60px; /* Increased bottom padding to 60px */
+    padding: 30px 24px 60px;
+    /* Increased bottom padding to 60px */
     width: 100%;
     box-sizing: border-box;
   }
@@ -276,7 +410,8 @@
   /* Project images - reduced border radius */
   .project-big img,
   .project-small img {
-    border-radius: 16px; /* Reduced from 28px */
+    border-radius: 16px;
+    /* Reduced from 28px */
   }
 
   /* Project info styles */
@@ -348,12 +483,14 @@
   .project-big,
   .project-small {
     width: 100%;
-    margin-bottom: 80px; /* Consistent spacing for all projects */
+    margin-bottom: 80px;
+    /* Consistent spacing for all projects */
   }
 
   /* Remove any additional margins from containers */
   .projects-container {
-    gap: 0; /* Remove gap since we're using margin for spacing */
+    gap: 0;
+    /* Remove gap since we're using margin for spacing */
   }
 
   /* Ensure last project doesn't have bottom margin */
@@ -401,7 +538,8 @@
 
 @media (max-width: 480px) {
   .featured-work-container {
-    padding: 24px 16px 80px; /* Adjusted for smaller screens */
+    padding: 24px 16px 80px;
+    /* Adjusted for smaller screens */
   }
 
   .featured-work-container h2 {
@@ -431,6 +569,7 @@
 
 @media (max-width: 360px) {
   .featured-work-container {
-    padding: 20px 12px 40px; /* Adjusted for smallest screens */
+    padding: 20px 12px 40px;
+    /* Adjusted for smallest screens */
   }
 }
