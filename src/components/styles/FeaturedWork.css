@@ -180,7 +180,7 @@
   }
 
   .featured-work-container h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -192,7 +192,7 @@
   }
 
   .featured-work-container h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 30px;
   }
 
@@ -405,7 +405,7 @@
   }
 
   .featured-work-container h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   /* Maintain consistent text styles */
