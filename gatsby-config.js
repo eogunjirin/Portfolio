@@ -12,7 +12,7 @@ module.exports = {
     title: ` `,
     description: `Emmanuel Ogunjirin - Designing beautiful things for computers`,
     author: ``,
-    siteUrl: `https:/emmanuel.fyi/`,
+    siteUrl: `https://emmanuel.fyi/`,
     image: `preview.png`,
   },
   plugins: [
