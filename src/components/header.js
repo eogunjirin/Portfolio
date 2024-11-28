@@ -1,10 +1,12 @@
 import * as React from "react"
 import '../components/styles/Header.css';
 import flower from '../images/FH.svg';
+import grainVideo from '../images/35mm.mp4';
 
 function Header() {
   return (
     <div className="header-container">
+      
       <div className="header">
         <div className="header-left">
           <div className="name">
@@ -51,6 +53,15 @@ function Header() {
           <a href="https://read.cv/eogun" className="link">Read.Cv</a>
         </div>
       </div>
+      <video
+        className="video-overlay"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={grainVideo} type="video/mp4" />
+      </video>
     </div>
   );
 }

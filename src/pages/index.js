@@ -5,14 +5,14 @@ import FeaturedWorkContainer from '../components/FeaturedWorkContainer';
 import SEO from '../components/seo';
 
 
-import ReportsImage from '../images/Reports.png';
-import HiWebsiteImage from '../images/HiWebsite.png';
-import RollsImage from '../images/Rolls.png';
-import PooperImage from '../images/Pooper.png';
-import ShopifyImage from '../images/Shopify.png';
-import GorillasImage from '../images/Gorillas.png';
-import sMasheDeImage from '../images/sMasheDe.png';
-import JuulsImage from '../images/Juuls.png';
+import ReportsImage from '../images/Reports.jpg';
+import HiWebsiteImage from '../images/HiWebsite.jpg';
+import RollsImage from '../images/Rolls.jpg';
+import PooperImage from '../images/Pooper.jpg';
+import ShopifyImage from '../images/Shopify.jpg';
+import GorillasImage from '../images/Gorillas.jpg';
+import sMasheDeImage from '../images/sMasheDe.jpg';
+import JuulsImage from '../images/Juuls.jpg';
 
 
 function IndexPage() {

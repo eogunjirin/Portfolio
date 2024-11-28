@@ -6,12 +6,12 @@ import '../../components/styles/ProjectDetail.css';
 import SEO from '../../components/seo';
 
 // Import images
-import HeroImage from '../../images/sm-hero.png';
-import Image1 from '../../images/sm1.png';
-import Image2 from '../../images/sm2.png';
-import Image3 from '../../images/sm3.png';
-import Image4 from '../../images/sm4.png';
-import Image5 from '../../images/sm5.png';
+import HeroImage from '../../images/sm-hero.jpg';
+import Image1 from '../../images/sm1.jpg';
+import Image2 from '../../images/sm2.jpg';
+import Image3 from '../../images/sm3.jpg';
+import Image4 from '../../images/sm4.jpg';
+import Image5 from '../../images/sm5.jpg';
 import Video1 from '../../images/1sm.mp4';
 import Video2 from '../../images/2sm.mp4';
 import Video3 from '../../images/sm3.mp4';

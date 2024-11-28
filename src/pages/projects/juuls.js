@@ -7,25 +7,25 @@ import SEO from '../../components/seo';
 
 
 // Import images
-import HeroImage from '../../images/juuls-hero.png';
-import Image1 from '../../images/juuls1.png';
-import Image2 from '../../images/juuls2.png';
-import Image3 from '../../images/juuls3.png';
-import Image4 from '../../images/juuls4.png';
-import Image5 from '../../images/juuls5.png';
-import Image6 from '../../images/juuls6.png';
-import Image7 from '../../images/juuls7.png';
-import Image8 from '../../images/juuls8.png';
-import Image9 from '../../images/juuls9.png';
-import Image10 from '../../images/juuls10.png';
-import Image11 from '../../images/juuls11.png';
-import Image12 from '../../images/juuls12.png';
-import Image13 from '../../images/juuls13.png';
-import Image14 from '../../images/juuls14.png';
-import Image15 from '../../images/juuls15.png';
-import Image16 from '../../images/juuls16.png';
-import Image17 from '../../images/juuls17.png';
-import Image18 from '../../images/juuls18.png';
+import HeroImage from '../../images/juuls-hero.jpg';
+import Image1 from '../../images/juuls1.jpg';
+import Image2 from '../../images/juuls2.jpg';
+import Image3 from '../../images/juuls3.jpg';
+import Image4 from '../../images/juuls4.jpg';
+import Image5 from '../../images/juuls5.jpg';
+import Image6 from '../../images/juuls6.jpg';
+import Image7 from '../../images/juuls7.jpg';
+import Image8 from '../../images/juuls8.jpg';
+import Image9 from '../../images/juuls9.jpg';
+import Image10 from '../../images/juuls10.jpg';
+import Image11 from '../../images/juuls11.jpg';
+import Image12 from '../../images/juuls12.jpg';
+import Image13 from '../../images/juuls13.jpg';
+import Image14 from '../../images/juuls14.jpg';
+import Image15 from '../../images/juuls15.jpg';
+import Image16 from '../../images/juuls16.jpg';
+import Image17 from '../../images/juuls17.jpg';
+import Image18 from '../../images/juuls18.jpg';
 import Video from '../../images/juuls.mp4';
 
 const JuulsProject = () => {

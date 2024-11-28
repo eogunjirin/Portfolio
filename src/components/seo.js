@@ -21,7 +21,7 @@ function SEO({ description, lang, meta, title }) {
             siteUrl
           }
         }
-        previewImage: file(relativePath: { eq: "preview.png" }) {
+        previewImage: file(relativePath: { eq: "preview.jpg" }) {
           childImageSharp {
             gatsbyImageData(width: 1200, layout: FIXED)
             original {
@@ -37,7 +37,7 @@ function SEO({ description, lang, meta, title }) {
   
   const absoluteImageUrl = previewImage?.childImageSharp?.original?.src
     ? `${site.siteMetadata.siteUrl}${previewImage.childImageSharp.original.src}`
-    : `${site.siteMetadata.siteUrl}/preview.png`
+    : `${site.siteMetadata.siteUrl}/preview.jpg`
 
   return (
     <Helmet

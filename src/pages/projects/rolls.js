@@ -6,19 +6,19 @@ import '../../components/styles/ProjectDetail.css';
 import SEO from '../../components/seo';
 
 // Import images
-import HeroImage from '../../images/rollshero.png';
-import Image1 from '../../images/rolls1.png';
-import Image2 from '../../images/rolls2.png';
-import Image3 from '../../images/rolls3.png';
-import Image4 from '../../images/rolls4.png';
-import Image5 from '../../images/rolls5.png';
-import Image6 from '../../images/rolls6.png';
-import Image7 from '../../images/rolls7.png';
-import Image8 from '../../images/rolls8.png';
-import Image9 from '../../images/rolls9.png';
-import Image10 from '../../images/rolls10.png';
-import Image11 from '../../images/rolls11.png';
-import Image12 from '../../images/rolls12.png';
+import HeroImage from '../../images/rollshero.jpg';
+import Image1 from '../../images/rolls1.jpg';
+import Image2 from '../../images/rolls2.jpg';
+import Image3 from '../../images/rolls3.jpg';
+import Image4 from '../../images/rolls4.jpg';
+import Image5 from '../../images/rolls5.jpg';
+import Image6 from '../../images/rolls6.jpg';
+import Image7 from '../../images/rolls7.jpg';
+import Image8 from '../../images/rolls8.jpg';
+import Image9 from '../../images/rolls9.jpg';
+import Image10 from '../../images/rolls10.jpg';
+import Image11 from '../../images/rolls11.jpg';
+import Image12 from '../../images/rolls12.jpg';
 
 const RollsProject = () => {
     return (

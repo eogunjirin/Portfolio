@@ -6,15 +6,15 @@ import '../../components/styles/ProjectDetail.css';
 import SEO from '../../components/seo';
 
 // Import images
-import HeroImage from '../../images/tour-dispatcher1.png';
-import Image1 from '../../images/tour-dispatcher2.png';
-import Image2 from '../../images/tour-dispatcher3.png';
-import Image3 from '../../images/tour-dispatcher4.png';
-import Image4 from '../../images/tour-dispatcher5.png';
-import Image5 from '../../images/tour-dispatcher6.png';
-import Image6 from '../../images/tour-dispatcher7.png';
-import MapImage1 from '../../images/tour-dispatcher8.png';
-import MapImage2 from '../../images/tour-dispatcher9.png';
+import HeroImage from '../../images/tour-dispatcher1.jpg';
+import Image1 from '../../images/tour-dispatcher2.jpg';
+import Image2 from '../../images/tour-dispatcher3.jpg';
+import Image3 from '../../images/tour-dispatcher4.jpg';
+import Image4 from '../../images/tour-dispatcher5.jpg';
+import Image5 from '../../images/tour-dispatcher6.jpg';
+import Image6 from '../../images/tour-dispatcher7.jpg';
+import MapImage1 from '../../images/tour-dispatcher8.jpg';
+import MapImage2 from '../../images/tour-dispatcher9.jpg';
 
 const TourDispatcherProject = () => {
     return (

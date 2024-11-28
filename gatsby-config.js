@@ -13,7 +13,7 @@ module.exports = {
     description: `Emmanuel Ogunjirin - Designing beautiful things for computers`,
     author: ``,
     siteUrl: `https://emmanuel.fyi/`,
-    image: `preview.png`,
+    image: `preview.jpg`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -30,7 +30,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `preview`,
-        path: `${__dirname}/src/images/preview.png`,
+        path: `${__dirname}/src/images/preview.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,

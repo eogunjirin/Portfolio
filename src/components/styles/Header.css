@@ -13,28 +13,33 @@
 
 .header-container {
   padding: 50px 60px;
-  background-image: url('../../images/BG.png');
+  background-image: url('../../images/BG.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 570px;
+  height: 590px;
   position: relative;
+  overflow: hidden;
 }
 
-.header-container::before {
-  content: '';
+.video-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../../images/grain.png');
-  background-size: cover;
-  opacity: 0.6;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: 3;
+  /* Higher than content */
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  /* This will help blend the video with the content */
 }
 
 .header {
@@ -120,7 +125,7 @@
   align-items: center;
   text-align: left;
   font-size: 4.5rem;
-  background-image: url('../../images/Text.png');
+  background-image: url('../../images/Text.jpg');
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
