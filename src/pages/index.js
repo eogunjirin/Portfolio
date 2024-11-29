@@ -26,7 +26,9 @@ function IndexPage() {
       description: "Redesigning the reports page into a unified, single-page view for improved visualization and a more seamless user experience.",
       image: ReportsImage,
       viewType: "small",
-      route: "https://www.hipeople.io/assessments"
+      externalLink: "https://www.hipeople.io/assessments",
+      isExternal: true,
+      linkText: "HiPeople Assessments"
     },
     {
       title: "HiPeople Website Redesign",
@@ -35,7 +37,9 @@ function IndexPage() {
       description: "Revamping the HiPeople website's design to boost conversions and deliver an engaging experience for visitors.",
       image: HiWebsiteImage,
       viewType: "small",
-      route: "https://www.hipeople.io/"
+      externalLink: "https://www.hipeople.io/",
+      isExternal: true,
+      linkText: "HiPeople Website"
     },
     {
       title: "Rolls",
@@ -60,7 +64,9 @@ function IndexPage() {
       description: "Enabling merchants to automatically send payment reminder emails directly to customers.",
       image: ShopifyImage,
       viewType: "small",
-      route: "https://www.shopify.com/editions/winter2023#payment-reminders"
+      externalLink: "https://www.shopify.com/editions/winter2023#payment-reminders",
+      isExternal: true,
+      linkText: "Shopify Editions"
     },
     {
       title: "Tour dispatcher",
