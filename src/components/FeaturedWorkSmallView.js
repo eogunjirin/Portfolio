@@ -65,7 +65,7 @@ const FeaturedWorkSmallView = ({ project }) => {
                                 <path 
                                     d="M5.5 3.5L12.5 10.5M12.5 3.5L12.5 10.5L5.5 10.5" 
                                     stroke="currentColor"
-                                    strokeWidth="1.5"
+                                    strokeWidth="1.3"
                                 />
                             </svg>
                         </a>

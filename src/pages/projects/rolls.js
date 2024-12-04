@@ -19,6 +19,8 @@ import Image9 from '../../images/rolls9.jpg';
 import Image10 from '../../images/rolls10.jpg';
 import Image11 from '../../images/rolls11.jpg';
 import Image12 from '../../images/rolls12.jpg';
+import Video1 from '../../images/rolls1.mp4';
+import Video2 from '../../images/rolls2.mp4'
 
 const RollsProject = () => {
     return (
@@ -69,6 +71,28 @@ const RollsProject = () => {
                     </p>
                     <div className="image-grid-full">
                         <FadeInImage src={Image1} alt="Rolls 1" />
+                    </div>
+                    <div className="image-grid">
+                        <div className="video-container">
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                            >
+                                <source src={Video1} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="video-container">
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                            >
+                                <source src={Video2} type="video/mp4" />
+                            </video>
+                        </div>
                     </div>
                 </section>
 
