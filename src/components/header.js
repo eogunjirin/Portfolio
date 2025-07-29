@@ -50,7 +50,6 @@ function Header() {
         <div className="links">
           <a href="mailto:emmanuelogunjirin@gmail.com" className="link">Email</a>
           <a href="https://www.linkedin.com/in/emmanuel-jiren/" className="link">LinkedIn</a>
-          <a href="https://read.cv/eogun" className="link">Read.Cv</a>
         </div>
       </div>
       <video
